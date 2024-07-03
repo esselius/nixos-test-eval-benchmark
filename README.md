@@ -20,6 +20,7 @@ Executed in    5.90 secs    fish           external
 ## Full trace
 
 ```shell
+❯ time nix eval --show-trace .#x -Lv --raw 2>&1| ts '[%Y-%m-%d %H:%M:%.S]'
 [2024-07-03 09:21:53.810419] evaluating file '/nix/store/fp0jfiw4dl8dc2rz2mgy9piza558mxdz-source/flake.nix'
 [2024-07-03 09:21:53.815687] trace: 7. build.vm
 [2024-07-03 09:21:53.815720] trace: 1. evaluating test
